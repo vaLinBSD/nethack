@@ -385,6 +385,10 @@ struct autopickup_exception {
 };
 #endif /* AUTOPICKUP_EXCEPTIONS */
 
+#ifdef SIMPLE_MAIL
+E int mailckfreq;
+#endif
+
 #undef E
 
 #endif /* DECL_H */
