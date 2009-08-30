@@ -1,0 +1,16 @@
+# Unix makefile stuff
+*.[ao]
+Makefile
+dat/Makefile
+doc/Makefile
+src/Makefile
+util/Makefile
+
+# winnt stuff
+*.pdb
+*.PDB
+*.exe
+binary
+build
+
+util/*_flex.c
