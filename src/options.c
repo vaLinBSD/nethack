@@ -2439,6 +2439,7 @@ goodfruit:
 		return;
 	}
 
+#ifdef CURSES_GRAPHICS
 	/* WINCAP2
 	 * term_cols:amount */
 	fullname = "term_cols";
@@ -2495,6 +2496,7 @@ goodfruit:
 		}
 		return;
 	}
+#endif
 
 	/* menustyle:traditional or combo or full or partial */
 	if (match_optname(opts, "menustyle", 4, TRUE)) {
