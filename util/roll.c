@@ -27,7 +27,7 @@ const char *str;
 	char *t = strcpy(malloc(strlen(str)), str),
 		 *p = strtok(t, " \t\r\n");
 	do {
-		u32 c = 1, d = 0;
+		u32 c = 1, d = 0, r;
 
 		if (sscanf(p, "%dd%d", &c, &d) < 2) {
 			if (sscanf(p, "d%d", &d) < 1) {
@@ -35,7 +35,12 @@ const char *str;
 				continue;
 			}
 		}
-		printf("= %d\n", roll(c, d));
+
+		r = roll(c, d);
+		if (c > 1)
+			printf("= %d\n", r);
+		else
+			printf("\n");
 	} while (p = strtok(NULL, " \t\r\n"));
 	free(t);
 }
