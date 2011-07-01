@@ -84,7 +84,7 @@ struct percent_color_option {
 };
 
 struct text_color_option {
-	const char *text;
+	char *text;
 	struct color_option color_option;
 	struct text_color_option *next;
 };
