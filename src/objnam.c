@@ -15,7 +15,7 @@ static boolean FDECL(wishymatch, (const char *,const char *,BOOLEAN_P));
 static char *NDECL(nextobuf);
 static void FDECL(add_erosion_words, (struct obj *, char *));
 #ifdef SORTLOOT
-char * FDECL(xname2, (struct obj *, boolean));
+char * FDECL(xname2, (struct obj *, BOOLEAN_P));
 #endif
 
 struct Jitem {
