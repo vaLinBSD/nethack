@@ -40,7 +40,7 @@ extern struct percent_color_option *hp_colors;
 extern struct percent_color_option *pw_colors;
 extern struct text_color_option *text_colors;
 
-static struct color_option
+struct color_option
 text_color_of(text, color_options)
 const char *text;
 const struct text_color_option *color_options;
@@ -55,7 +55,7 @@ const struct text_color_option *color_options;
 	return text_color_of(text, color_options->next);
 }
 
-static struct color_option
+struct color_option
 percentage_color_of(value, max, color_options)
 int value, max;
 const struct percent_color_option *color_options;
